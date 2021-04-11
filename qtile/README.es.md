@@ -1,10 +1,6 @@
-# Qtile
-
-![Qtile](../../.screenshots/qtile.png)
-
-***Idioma***
-- 🇪🇸 Español
-- [🇺🇸 English](https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile)
+# Configuracion de Qtile
+basada en los archivos de Antonio Sarosi
+https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile
 
 ## Instalación (Arch)
 
