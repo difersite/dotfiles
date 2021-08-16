@@ -1,6 +1,8 @@
-#
-# Configuracion de fish
-#
+# TITULO: Configuracion de fish
+# VERSION: 02
+# FECHA: 16 AGOSTO 2021
+# AUTOR: Diego Ferruz
+# DETALLE: Basado en varias configuraciones: http://github.com/linuxdabbler 
 
 # Config
 set fish_greeting "Bienvenido a Fish"
