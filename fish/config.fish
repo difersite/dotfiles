@@ -30,8 +30,15 @@ function cnt
   seq 15
 end 
 
+#################################
+### Reemplazo de Aplicaciones ###
+#################################
+
 # vim to nvim
 command -qv nvim && alias vim nvim
+
+# cat 2 bat
+alias cat='bat'
 
 #####################
 ### Abreviaciones ###
