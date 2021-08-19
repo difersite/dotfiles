@@ -1,3 +1,9 @@
+" TITULO: init.vim
+" VERSION: 01
+" FECHA: 19 Agosto 2021
+" AUTOR: DIEGO FERRUZ
+" DETALLES: configuracion de nvim, que estoy estudiando actualmente
+
 " Fundamentals "{{{
 " ---------------------------------------------------------------------
 
