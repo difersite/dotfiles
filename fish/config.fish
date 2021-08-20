@@ -1,6 +1,6 @@
 # TITULO: Configuracion de fish
-# VERSION: 02
-# FECHA: 16 AGOSTO 2021
+# VERSION: 02.01
+# FECHA: 20 AGOSTO 2021
 # AUTOR: Diego Ferruz
 # DETALLE: Basado en varias configuraciones: http://github.com/linuxdabbler 
 # y algunas abreviaturas de Distrotube - https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/fish/config.fish
@@ -58,9 +58,9 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 ## Listar archivos - "ls" to "exa"
-abbr ls 'exa -l --icons --color=always --group-directories-first'  ## por defecto
-abbr ll 'exa -l --icons --tree --level=1'                  ## formato detallado
-abbr la 'exa -la --icons --tree --level=1 --group-directories-first'
+abbr ls 'exa -l --icons --color=always --group-directories-first'    ## por defecto
+abbr ll 'exa -l --icons --tree --level=1'                            ## formato detallado
+abbr la 'exa -la --icons --tree --level=1 --group-directories-first' ## completo
 
 # pacman update
 alias pacsyu='sudo pacman -Syyu'                             ## update only standard pkgs
