@@ -1,9 +1,10 @@
 # TITULO: Configuracion de fish
-# VERSION: 02.01
+# VERSION: 02.02
 # FECHA: 20 AGOSTO 2021
 # AUTOR: Diego Ferruz
 # DETALLE: Basado en varias configuraciones: http://github.com/linuxdabbler 
 # y algunas abreviaturas de Distrotube - https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/fish/config.fish
+# 02. Agrego alguas abreviaciones wifistatus y programas utiles comoncdu
 
 # Config
 set fish_greeting "Bienvenido a Fish"
@@ -94,3 +95,13 @@ alias pull='git pull origin'
 alias push='git push origin'
 alias tag='git tag'
 alias newtag='git tag -a'
+
+# Networking
+alias wifistatus='nmcli dev wifi list'
+
+# Used Program
+# fish, neofetch, exa, cmatrix
+# pandoc - converter markdown to pdf,html,etc... 
+# figlet -banner en command (http://www.figlet.org/figlet-man.html)
+# ncdu - programas de mayor tamaño
+# tmux - multiplexer term (en Arch - yay repo)
