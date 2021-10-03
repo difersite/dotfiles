@@ -59,9 +59,9 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 ## Listar archivos - "ls" to "exa"
-abbr ls 'exa -l --icons --color=always --group-directories-first'    ## por defecto
-abbr ll 'exa -l --icons --tree --level=1'                            ## formato detallado
-abbr la 'exa -la --icons --tree --level=1 --group-directories-first' ## completo
+abbr ls 'exa -hl --icons --color=always --group-directories-first'    ## por defecto, muesra cabecera, no muestra archivos y directorios ocultos
+abbr ll 'exa -hl --icons --tree --level=1 --group-directories-first'  ## formato detallado
+abbr la 'exa -hla --icons --tree --level=1 --group-directories-first' ## completo muestra archivos y directorios ocultos
 
 # pacman update
 alias pacsyu='sudo pacman -Syyu'                             ## update only standard pkgs
