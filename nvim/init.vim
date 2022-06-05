@@ -1,8 +1,9 @@
 " TITULO: init.vim
 " VERSION: 02
-" FECHA: 06 may 2022
+" FECHA: 05 jun 2022
 " AUTOR: DIEGO FERRUZ
 " DETALLES: nueva configuracion basada en el curso de nvim de Astrodev - https://www.youtube.com/watch?v=nC6I4XbvK3g
+" Se agregan plugins basado en recomendaciones de hola mundo https://www.youtube.com/watch?v=XgQFzi3VkC8
 " ____________________________________________________________________
 "
 " Fundamentals
@@ -33,9 +34,27 @@ highlight ColoColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+  " themes
   Plug 'morhetz/gruvbox'
   Plug 'ayu-theme/ayu-vim'
   Plug 'joshdick/onedark.vim'
+  "Plug 'shinchu/lightline-gruvbox.vim'
+
+  "status bar
+  Plug 'maximbaz/lightline-ale'
+  Plug 'itchyny/lightline.vim'
+
+  "nerd tree
+  Plug 'scrooloose/nerdtree'
+
+  "typing
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'alvan/vim-closetag'
+  Plug 'tpope/vim-surround'
+
+  "autocomplete
+  "Plug 'sirver/ultisnips'
+  Plug 'neoclide/coc.nvim',{'branch': 'release'}
 
 call plug#end()
 
@@ -48,3 +67,8 @@ let ayucolor="dark"
 let g:gruvbox_cotrast_dark="hard" 
 
 colorscheme gruvbox 
+
+" MAPs Teclas
+" ---------------------------------------------------------------------
+
+nnoremap <Leader>nt :NERDTree<CR>
