@@ -71,4 +71,6 @@ colorscheme gruvbox
 " MAPs Teclas
 " ---------------------------------------------------------------------
 
+let mapleader = " "
+
 nnoremap <Leader>nt :NERDTree<CR>
