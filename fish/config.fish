@@ -21,6 +21,9 @@ set -g theme_hostname always
 # Inicio de programas
 neofetch
 
+# Prompt
+starship init fish | source
+
 ### funciones personalizadas ###
 # Line counting
 function line-count
@@ -62,6 +65,9 @@ alias .5='cd ../../../../..'
 abbr ls 'exa -hl --icons --color=always --group-directories-first'    ## por defecto, muesra cabecera, no muestra archivos y directorios ocultos
 abbr ll 'exa -hl --icons --tree --level=1 --group-directories-first'  ## formato detallado
 abbr la 'exa -hla --icons --tree --level=1 --group-directories-first' ## completo muestra archivos y directorios ocultos
+
+## file manager
+alias ranger ranger --choosedir=$HOME/.rangerdir; set LASTDIR (cat $HOME/.rangerdir); cd $LASTDIR
 
 # pacman update
 alias pacsyu='sudo pacman -Syyu'                             ## update only standard pkgs
