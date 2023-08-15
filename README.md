@@ -10,11 +10,11 @@
 (9) Salir, desmontar y Reboot
 
 ## Preparación 
-* teclado
+** teclado **
 ' loadkey la_latin1
 
-* Internet
-* hora
+** Internet **
+** hora **
 ## Particionado 
 ## Instalación Sistema Base 
 ## Arranque
