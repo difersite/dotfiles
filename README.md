@@ -1,3 +1,20 @@
+# Instalación Archlinux
+(1) Preparación 
+(2) Particionado 
+(3) Instalación Sistema Base 
+(4) Arranque
+(5) Personalización del Sistema
+(6) Servicios y Programas
+(7) Administrador y usuarios
+(8) Instalación del Kernel
+(9) Salir, desmontar y Reboot
+
+## Preparación 
+
+
+
+
+
 # dotfiles
 Configuraciones personales: 
 (1) qtile. Basada en antonio Sarosi 
