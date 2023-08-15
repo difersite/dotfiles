@@ -11,7 +11,9 @@
 
 ## Preparación 
 ** teclado **
-' loadkey la_latin1
+'''
+loadkey la_latin1
+'''
 
 ** Internet **
 ** hora **
