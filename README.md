@@ -11,15 +11,13 @@
 
 ## Preparación 
 **teclado**
+
 '''
 loadkey la_latin1
 '''
-
 Some basic Git commands are:
 ```
 git status
-git add
-git commit
 ```
 
 ** Internet **
