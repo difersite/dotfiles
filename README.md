@@ -10,10 +10,19 @@
 (9) Salir, desmontar y Reboot
 
 ## Preparación 
+* teclado
+'"" loadkey la_latin1
 
-
-
-
+* Internet
+* hora
+## Particionado 
+## Instalación Sistema Base 
+## Arranque
+## Personalización del Sistema
+## Servicios y Programas
+## Administrador y usuarios
+## Instalación del Kernel
+## Salir, desmontar y Reboot
 
 # dotfiles
 Configuraciones personales: 
