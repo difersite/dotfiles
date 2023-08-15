@@ -11,17 +11,13 @@
 
 ## Preparación 
 **teclado**
-
-'''
+```
 loadkey la_latin1
-'''
-Some basic Git commands are:
-```
-git status
 ```
 
-** Internet **
-** hora **
+**Internet**
+**hora**
+
 ## Particionado 
 ## Instalación Sistema Base 
 ## Arranque
