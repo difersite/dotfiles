@@ -5,17 +5,15 @@ Author: Dferruz
 ---
 # Arch Installation Guide
 ## Prerequisitos
-**Console keyboard layout** 
-
+**Console keyboard layout** \
 Definicion de teclado en español
 ```
 $ loadkeys la-latin1
 ```
-**Internet** 
-
-Validar la conexion a internet, Ping (conexion a internet) y si no configurarla
+**Internet** \
+Validar la conexion a internet, Ping (conexion a internet) y si no configurarla \
 Fisicamente cable o wifi.
-**WIFI:** 
+**WIFI:** \
 
 ```
 ip link show
@@ -25,7 +23,7 @@ wpa_passphrase <<SSID>> <<Passwd>> > /etc/wifi
 wpa_supplicant -B -i wlan0 -D wext -c /etc/wifi
 dhclient
 ```
-**Uso Horario** 
+**Uso Horario** \
 Activar NTP, timedatectl status (chek set-ntp true)
 ```
 timedatectl status
