@@ -5,9 +5,9 @@ Author: Dferruz
 ---
 # Arch Installation Guide
 ## Referencias
-1 Arfan Zubi
-- https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
-- https://github.com/3rfaan
+1. Arfan Zubi
+  - https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
+  - https://github.com/3rfaan
 ## Prerequisitos
 - **Console keyboard layout**
 Definicion de teclado en español
