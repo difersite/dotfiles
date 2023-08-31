@@ -5,15 +5,15 @@ Author: Dferruz
 ---
 # Arch Installation Guide
 ## Prerequisitos
-**Console keyboard layout**
+**Console keyboard layout** 
 Definicion de teclado en español
 ```
 $ loadkeys la-latin1
 ```
-**Internet**
+**Internet** 
 Validar la conexion a internet, Ping (conexion a internet) y si no configurarla
 Fisicamente cable o wifi.
-**WIFI:**
+**WIFI:** 
 ```
 ip link show
 ip link set wlan0 up
