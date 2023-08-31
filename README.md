@@ -1,24 +1,19 @@
-<!--
+---
 Title: Instalacion ArchLinux
 Date: 14-08-23
 Author: Dferruz
-Ref: (1) Arfan Zubi 	
-- https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
-- https://github.com/3rfaan
--->
-
+---
 # Arch Installation Guide
-
 ## Prerequisitos
-*Console keyboard layout*
+**Console keyboard layout**
 Definicion de teclado en español
 ```
 $ loadkeys la-latin1
 ```
-*Internet*
+**Internet**
 Validar la conexion a internet, Ping (conexion a internet) y si no configurarla
 Fisicamente cable o wifi.
-*WIFI:*
+**WIFI:**
 ```
 ip link show
 ip link set wlan0 up
@@ -27,14 +22,28 @@ wpa_passphrase <<SSID>> <<Passwd>> > /etc/wifi
 wpa_supplicant -B -i wlan0 -D wext -c /etc/wifi
 dhclient
 ```
-
-*Uso Horario* 
+**Uso Horario** 
 Activar NTP, timedatectl status (chek set-ntp true)
 ```
 timedatectl status
 timedatectl set-ntp true
 ```
 ## Particion
+lsblk
+
+cfdisk - 40G
+Type: DOS
+sda1 - boot (200M)
+sda2 - SWAP (2G)
+sda3 - / (30G)
+sda4 - /home (lo que queda)
+
+mkfs.fat -F 32 /dev/sda1
+mkswap /dev/sda2
+swapon /dev/sda2
+
+mkfs.ext4 	/dev/sda3 (para la raiz)
+			/dev/sda4 (para home)
 
 <!--
 # Instalación Archlinux
