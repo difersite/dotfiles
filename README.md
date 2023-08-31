@@ -54,27 +54,27 @@ Ref:
 ## Prerequisitos
 * Console keyboard layout *
 Definicion de teclado en español
-'''
+```
 $ loadkeys la-latin1
-'''
+```
 
 ## Internet 
 Ping (conexion a internet)
-'''
+```
 ip link show
 ip link set wlan0 up
 iwlist wlan0 scan
 wpa_passphrase <<SSID>> <<Passwd>> > /etc/wifi
 wpa_supplicant -B -i wlan0 -D wext -c /etc/wifi
 dhclient
-'''
+```
 
 ## Horario 
 timedatectl status (chek set-ntp true)
-'''
+```
 timedatectl status
 timedatectl set-ntp true
-'''
+```
 ## Particion
 lsblk
 
@@ -131,35 +131,40 @@ nvim /etc/hosts
 
 
 # Servicios y Programas
-
+```
 pacman -S networkmanager ifplugd  
 pacman -S openssh
 pacman -S exa bat 
 pacman -S sudo 
-
+```
+```
 systemctl enable dhcpcd
 systemctl enable NetworkManager
 systemctl enable sshd.service
-
+```
 # admin y user
-
+```
 passwd
 useradd -m -g users -G wheel,storage,power -s /bin/bash dferruz
 passwd dferruz
-
+```
+```
 nvim /etc/sudoers (descomentar %wheel)
-
+```
 # Instalacion del Kernel
-
+```
 ls /boot
 pacman -S linux linux-firmware mkinitcpio
 pacman -S grub
-
+```
+```
 grub-install --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -p linux
-
+```
 # salir y reboot
+```
 exit
 umount -R /mnt
 reboot
+```
