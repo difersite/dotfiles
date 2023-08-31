@@ -4,8 +4,8 @@ Date: 14-08-23
 Author: Dferruz
 Ref: 
 (1) Arfan Zubi 	
-		- https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
-		- https://github.com/3rfaan
+- https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
+- https://github.com/3rfaan
 ---
 
 # Arch Installation Guide
