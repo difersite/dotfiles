@@ -5,10 +5,17 @@
 "
 "2.Para poder instalar los Plugin primero seguir las instrucciones en:
 "	https://github.com/junegunn/vim-plug
+" En Linux
+" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+"       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 "	En Windows para pwsh (Power shell) Copiar y ejecutar el siguiente comando:
 "	iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 "	     ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 "
+" Una vez ejecurado los comandos sh o iwr segun el sistema operativo, abrir init.vim dentro del directorio de configuracion
+" en windows es $HOME/AppData/Local/nvim (C:\Users\dferruzr\AppData\Local\nvim) 
+" en Linux es $HOME/.conf/nvim (/home/dferruz/.config/nvim) - Ojo cambiar el directorio de la configuracion.
+" y luego ejecutar :PlugInstall
 "" ===============================================================================
 " CONFIGURACIONES BASICAS
 set number 				"muestra los numeros de cada linea en la parte izquierda 
@@ -32,7 +39,7 @@ set termguicolors
 
 ":::instalacion de plugins:::
 
-call plug#begin('C:\Users\dferruzr\AppData\Local\nvim\Plugged')	"directorio donde se van a instalar los plugins
+call plug#begin('.config\nvim\Plugged')	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
