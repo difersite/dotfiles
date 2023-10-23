@@ -14,7 +14,7 @@
 "
 " Una vez ejecurado los comandos sh o iwr segun el sistema operativo, abrir init.vim dentro del directorio de configuracion
 " en windows es $HOME/AppData/Local/nvim (C:\Users\dferruzr\AppData\Local\nvim) 
-" en Linux es $HOME/.conf/nvim (/home/dferruz/.config/nvim) - Ojo cambiar el directorio de la configuracion.
+" en Linux es $HOME/.conf/nvim (/home/dferruz/.config/nvim) - Ojo cambiar el directorio de la configuracion mas abajo -- call plug#begin('~/.config/nvim/plugged').
 " y luego ejecutar :PlugInstall
 "" ===============================================================================
 " CONFIGURACIONES BASICAS
