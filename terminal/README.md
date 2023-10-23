@@ -25,8 +25,9 @@ si no esta instalado su, lo instalamos
 ```
 pacman -S sudo
 ```
-Luego comentamos
-%wheel ALL=(ALL) NOPASSWD: ALL
+Luego descomentamos comentamos
+%wheel ALL=(ALL) NOPASSWD: ALL  
+En el archivo /etc/sudoers
 
 Previo a cualquier proceso de implementacion, hacemos un listado de software instalados
 ```
@@ -75,10 +76,16 @@ Programas Base
 - zsh // aca van los alias
 - oh-my-posh
 - unzip // es un requerimiento para utilizar curl  
-
+- openssh
 ## Base  
 ```
-sudo pacman -S neovim neofetch exa bat zsh unzip
+sudo pacman -S openssh neovim neofetch exa bat zsh unzip
+```
+## openssh
+habilitamos el servicio
+```
+sudo systemctl start sshd.service
+sudo systemctl enable sshd.enable
 ```
 
 ## oh-my-posh
