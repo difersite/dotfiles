@@ -74,7 +74,7 @@ Programas Base
 - exa
 - bat
 - zsh // aca van los alias
-- oh-my-posh
+- oh-my-posh o starship 
 - unzip // es un requerimiento para utilizar curl  
 - openssh
 ## Base  
@@ -86,6 +86,12 @@ habilitamos el servicio
 ```
 sudo systemctl start sshd.service
 sudo systemctl enable sshd.enable
+```
+
+## Starship
+Ver el proceso de instalacion en https://starship.rs/
+```
+curl -sS https://starship.rs/install.sh | sh
 ```
 
 ## oh-my-posh
