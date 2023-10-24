@@ -108,6 +108,22 @@ curl -sS https://starship.rs/install.sh | sh
 ```
 
 ## oh-my-posh
+Le pregunte a bard y me dio las siguientes instrucciones, las cuales probe y funcionó:
+1. Esta instalado Git y aur, por lo que ejecutar
+```
+yay -S oh-my-posh-bin
+```
+Luego ejecutar
+```
+oh-my-posh prompt init bash
+```
+Ojo que bash depende de donde se va a ejecutar oh-my-posh, puedes ser zsh, etc.. Igual salen las instrucciones
+Este comando genera un archivo que muestra en pantalla que se debe copiar y agregar al .bashrc (segun el interprete de comandos que se tenga, si es zsh, seria -zshrc)
+luego reabrir el interprete de comandos, en mi caso
+```
+source .bashrc
+```
+
 DOC: https://ohmyposh.dev/docs/installation/linux  
 ```
 curl -s https://ohmyposh.dev/install.sh | bash -s
