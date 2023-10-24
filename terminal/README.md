@@ -77,19 +77,21 @@ Programas Base
 - oh-my-posh o starship 
 - unzip // es un requerimiento para utilizar curl  
 - openssh
+- pandoc
+
 ## Base  
 ```
 sudo pacman -S openssh neovim neofetch exa bat zsh unzip
 ```
-## Aur Paquet Manager
+## Aur Pakage Manager
 Como no todos los paquetes estan disponibles en pacman, instalamos el manejador de paquetes Aur
 ```
-$ sudo pacman -S base-devel
-$ mkdir aur
-$ cd aur
-$ git clone https://aur.archlinux.org/yay.git
-$ cd yay
-$ makepkg -si
+sudo pacman -S base-devel
+mkdir aur
+cd aur
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
 ## openssh
