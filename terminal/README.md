@@ -81,6 +81,17 @@ Programas Base
 ```
 sudo pacman -S openssh neovim neofetch exa bat zsh unzip
 ```
+## Aur Paquet Manager
+Como no todos los paquetes estan disponibles en pacman, instalamos el manejador de paquetes Aur
+```
+$ sudo pacman -S base-devel
+$ mkdir aur
+$ cd aur
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+```
+
 ## openssh
 habilitamos el servicio
 ```
