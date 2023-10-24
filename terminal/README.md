@@ -77,6 +77,7 @@ Programas Base
 - oh-my-posh o starship 
 - unzip // es un requerimiento para utilizar curl  
 - openssh
+- ranger // FileManager
 - pandoc
 
 ## Base  
