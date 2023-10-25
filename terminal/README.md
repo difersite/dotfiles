@@ -74,7 +74,7 @@ Programas Base
 - exa
 - bat
 - zsh // aca van los alias
-- oh-my-posh o starship 
+- oh-my-posh o starship ---> Pendiente: Inicia oh-my-posh, pero tengo problemas con las fuentes
 - unzip // es un requerimiento para utilizar curl  
 - openssh
 - ranger // FileManager
@@ -125,8 +125,16 @@ luego reabrir el interprete de comandos, en mi caso
 source .bashrc
 ```
 
+>> NOTA: Queda Pendiente la incorporacion de las fuentes NerdFond que incluyan los iconos
+>> he visto varias formas de incluir fuentes (fc-cache -vf / fc-match Meslo -a) para lo que tuve que insaltar fontconfig (sudo pacman -S fontconfig)
+>> las fuentes quedan guardadas en Local: ~/.local/share/fonts o para todos /usr/share/fonts
+
 DOC: https://ohmyposh.dev/docs/installation/linux  
 ```
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
+
+# Servicios
+LDAP
+
 
