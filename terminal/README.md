@@ -133,6 +133,9 @@ DOC: https://ohmyposh.dev/docs/installation/linux
 ```
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
+# Bard Ai 
+Instalacion de bard-cli (AI de Google)
+Tal parece que se hace a traves de un repositorio aur
 
 # Servicios
 LDAP
