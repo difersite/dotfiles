@@ -8,7 +8,7 @@ Descripcion: Implementacion de programas y configuraciones dentro de un terminal
 <!-- Comentarios internos aca -->
 # Terminal
 Primero probamos conectividad y vemos hacemos un update del sistema
-puede ser que tenamos que recincronizar los certificados, para lo cual haceos:  
+puede ser que tenamos que resincronizar los certificados, para lo cual haceos:  
 ```
 pacman-key --init
 pacman-key --populate
@@ -79,6 +79,10 @@ Programas Base
 - openssh
 - ranger // FileManager
 - pandoc
+- fzf // para buscar archivos
+- ver font
+- ver programas para hacer banner
+- ver programas img2ascii
 
 ## Base  
 ```
