@@ -131,7 +131,145 @@ format = "[ took $duration ]($style)"
 [character]
 format = " $symbol"
 
+# Get editor completions based on the config schema
+# https://gist.github.com/nwaringa/962709b9882147fb44eaa685c19a1039
+"$schema" = 'https://starship.rs/config-schema.json'
 
+format = """
+[](#220135)\
+$directory\
+[](fg:#220135 bg:#370617)\
+$git_branch\
+$git_status\
+[](fg:#370617 bg:#6a040f)\
+$aws\
+[](fg:#6a040f bg:#9d0208)\
+$time\
+[ ](fg:#9d0208)\
+[\nﬦ ](fg:#ffffff)"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+[directory]
+style = "bg:#220135"
+truncation_length = 200
+truncation_symbol = "…/"
+format = "[ $path ]($style)[$read_only]($read_only_style)"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#370617"
+format = '[[ $symbol $branch ](bg:#370617)]($style)'
+
+[git_status]
+style = "bg:#370617"
+format = '[[($all_status$ahead_behind )](bg:#370617)]($style)'
+
+[aws]
+style = "bg:#6a040f"
+symbol = " "
+format = "[[ $symbol $region ](bg:#6a040f)]($style)"
+[aws.region_aliases]
+us-east-1 = "va"
+
+[time]
+disabled = false
+time_format = "%a %m/%d %I:%M %P" # Hour:Minute Format
+style = "bg:#9d0208"
+format = '[[  $time ](bg:#9d0208)]($style)'
+
+#####################################################################################
+## Configuracion Original
+#####################################################################################
+
+#format = """
+#$username\
+#$hostname\
+#$directory\
+#$git_branch\
+#$git_state\
+#$git_status\
+#$git_metrics\
+#$fill\
+#$nodejs\
+#$cmd_duration $jobs $time $battery\
+#$line_break\
+#$character"""
+#
+#[nodejs]
+#format = "[$symbol($version )]($style)"
+#
+#[fill]
+#symbol = " "
+#
+#[directory]
+#style = "blue"
+#read_only = " "
+#truncation_length = 4
+#truncate_to_repo = false
+#
+#[character]
+#success_symbol = "[❯](purple)"
+#error_symbol = "[❯](red)"
+#vicmd_symbol = "[❮](green)"
+#
+#[git_branch]
+#symbol = " "
+#format = "[$symbol$branch]($style) "
+#style = "bright-black"
+#
+#[jobs]
+#symbol = ""
+#style = "bold red"
+#number_threshold = 1
+#format = "[$symbol]($style)"
+#
+#
+#[battery]
+#full_symbol = '🔋 '
+#charging_symbol = '⚡️ '
+#discharging_symbol = '💀 '
+#
+#[git_status]
+#format = '([\[$all_status$ahead_behind\]]($style) )'
+#style = "cyan"
+#
+#[git_state]
+#format = '\([$state( $progress_current/$progress_total)]($style)\) '
+#style = "bright-black"
+#
+#[git_metrics]
+#disabled = false
+#
+#[cmd_duration]
+#format = "[$duration]($style)"
+#style = "yellow"
+#
+#[memory_usage]
+#symbol = " "
+#
+#[rust]
+#symbol = " "
+#
+#[time]
+#disabled = false
+#style = "bold white"
+#format = "[$time]($style)"
+#
+#[custom.stunnel]
+#when = "ps aux | grep stunnel | grep -v grep"
+#command = "ps -o etime= -p $(ps aux | grep stunnel | grep -v grep | awk '{print $2}')"
+#style = "red"
+#format = "[TUNNEL OPEN for $output]($style)"
 
 
 ################################################
