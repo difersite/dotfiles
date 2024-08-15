@@ -34,7 +34,6 @@ alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`;cd
 ## Other
 alias font='fc-list'
 
-
 #
 # Prompt Appeariance
 #
@@ -47,3 +46,11 @@ alias font='fc-list'
 eval "$(starship init zsh)"
 neofetch
 startx
+
+#############################################################
+### REFERENCIAS
+#############################################################
+## Tech Craft        -  https://youtu.be/2OHrTQVlRMg
+## TechHut           -  https://youtu.be/cKqsw_sAsU8
+## Brodie Robertson  -  https://youtu.be/jFOso1s6PAI
+##
