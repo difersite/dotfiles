@@ -3,11 +3,13 @@
 ### AUTHR: dferruz
 ### DATE: AGO 24
 #############################################################
+### font:   https://www.nerdfonts.com/cheat-sheet
+###         https://fontawesome.com/
+#############################################################
+
 
 format = """
-[ ](fg:#ffffff)\
 $username\
-$hostname\
 $directory\
 $git_branch\
 $git_state\
@@ -17,6 +19,7 @@ $fill\
 $nodejs\
 $cmd_duration $jobs $time\
 $line_break\
+[ ](fg:#ffffff)\
 $character"""
 
 [username]
@@ -40,26 +43,15 @@ truncate_to_repo = false
 
 [directory.substitutions]
 "OneDrive - Deloitte (O365D)" = " "
-"Documents" = " "
+"Documentos" = "󰈙 "
 "Downloads" = " "
 "Music" = " "
-"Pictures" = " "
-
-[character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+"Picture" = " "
 
 [git_branch]
 symbol = " "
 format = "[$symbol$branch]($style) "
 style = "bright-black"
-
-[jobs]
-symbol = ""
-style = "bold red"
-number_threshold = 1
-format = "[$symbol]($style)"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
@@ -76,17 +68,25 @@ disabled = false
 format = "[$duration]($style)"
 style = "yellow"
 
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
 [memory_usage]
 symbol = " "
 
-[rust]
-symbol = " "
-
 [time]
 disabled = false
-time_format = "%I:%M %P"
+time_format = "%I:%M%P"
 style = "bold white"
-format = '[  $time ]($style)'
+format = '[ $time ]($style)'
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
 
 [custom.stunnel]
 when = "ps aux | grep stunnel | grep -v grep"
