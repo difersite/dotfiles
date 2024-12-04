@@ -15,6 +15,7 @@
 ## nvim
 ## neofetch
 ## jp2a -> jpg 2 ascii
+## awk
 
 ## alias
 ## filemanager
@@ -32,7 +33,7 @@ alias gpic='cd ~/Picture'
 alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`;cd "$LASTDIR"'
 
 ## Other
-alias font='fc-list | awk -F: '{print $2}' | sort |uniq '
+alias font='fc-list' ## fc-list | awk -F: '{print $2}' | sort |uniq 
 
 #
 # Prompt Appeariance
