@@ -32,7 +32,7 @@ alias gpic='cd ~/Picture'
 alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`;cd "$LASTDIR"'
 
 ## Other
-alias font='fc-list'
+alias font='fc-list | awk -F: '{print $2}' | sort |uniq '
 
 #
 # Prompt Appeariance
