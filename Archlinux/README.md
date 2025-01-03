@@ -1,5 +1,4 @@
 # INSTALACION DE ARCHLINUX
-
 ---
 Title: Instalacion ArchLinux
 Date: 14-08-23
