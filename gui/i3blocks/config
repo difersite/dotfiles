@@ -1,0 +1,43 @@
+# ~/.config/i3blocks/config
+
+# Configuración global
+command=$SCRIPT_DIR/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[cpu]
+command=~/.config/i3blocks/scripts/cpu_usage.sh
+interval=10
+label=CPU 
+
+[disk]
+command=df -h / | awk '/\/$/ {print $4}'
+label=DISK 
+interval=30
+
+[memory]
+command=~/.config/i3blocks/scripts/memory.sh
+label=MEM 
+interval=30
+
+[wifi]
+command=iwgetid -r
+interval=10
+label=WiFi:
+
+[volume]
+command=~/.config/i3blocks/scripts/volume.sh
+interval=once
+signal=10
+CLICK_LEFT=pavucontrol
+
+[battery]
+#command=acpi | awk '{print $4}' | sed 's/,//'
+command=~/.config/i3blocks/scripts/batt.sh
+label=BAT 
+interval=60
+CLICK_LEFT=pavucontrol
+
+[time]
+command=date '+%d-%m-%Y'
+interval=1
