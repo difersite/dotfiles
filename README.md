@@ -2,7 +2,6 @@
 <!-- Fecha: 14-08-2023 Rev 2 -->
 <!-- Author: dferruz -->
 # dotfiles dferruz
----
 ## Referencias
 1. Arfan Zubi
     - https://www.youtube.com/watch?v=cOobSmI-XgA&t=399s
