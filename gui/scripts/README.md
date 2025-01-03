@@ -4,3 +4,4 @@
 ```
 nmcli dev wifi 
 ```
+ver iw como aplicativo
