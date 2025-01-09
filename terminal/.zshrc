@@ -1,7 +1,7 @@
 #############################################################
 ### TITULO: myConfig
 ### AUTHR: dferruz
-### DATE: AGO 24
+### DATE: ENE 25
 #############################################################
 ## Terminal App
 ## =============
@@ -17,20 +17,37 @@
 ## jp2a -> jpg 2 ascii
 ## awk
 
+## Definicion de Variables
+## estas definiciones sirven para visualizar con nvim en ranger
+export EDITOR=nvim
+export VISUAL=nvim
+
 ## alias
 ## filemanager
 alias lf='exa -fhl --icons'
 alias ld='exa -Dhl --icons'
 alias la='exa -hla --icons --group-directories-first'
 alias vi='nvim'
+alias vim='nvim'
 alias ..='cd ..'
 alias gcfg='cd ~/.config'
 alias gdoc='cd ~/Documentos'
 alias gdwn='cd ~/Downloads'
 alias gpic='cd ~/Picture'
+alias grsp='cd ~/Respaldo'
 
 ## Ranger
 alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`;cd "$LASTDIR"'
+
+## Agentes IA
+alias claude='~/.local/share/applications/claude.sh'
+alias leon='~/.local/share/applications/leon.sh'
+alias pame='~/.local/share/applications/pame.sh'
+
+## Monitor
+# xrandr para saber cuales son los monitores activos
+alias 2mnt='xrandr --output eDP1 --primary --mode 1366x768 --output HDMI1 --mode 1920x1080 --right-of eDP1' #--left-of eDP1
+alias smnt='xrandr --output eDP1 --primary --mode 1366x768'
 
 ## Other
 alias font='fc-list' ## fc-list | awk -F: '{print $2}' | sort |uniq 
