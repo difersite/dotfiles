@@ -21,9 +21,20 @@ $ useradd -m -g users -G wheel,storage,power,video,audio <your username>
 $ passwd <your username> <your password>
 ```
 Luego comentamos sudoers
-si no esta instalado su, lo instalamos
+si no esta instalado sudo, lo instalamos
 ```
 pacman -S sudo
+```
+en Debian esto seria:
+Primero necesitas entrar como root
+```
+apt-get install sudo
+```
+luego para generar el usuario y agregarlo al gurpo sudo pueder proceder de la siguiente forma:
+```
+$ useradd -m -g users <your username> ## no hemos agtregado grupos en este caso
+$ usermod -aG sudo <your username> ## aca agregamos el nuevo usuario al grupo sudo
+$ visudo ## con este comeando editamos con nano el archivo sudoer que se encuentra en /etc/sudoers
 ```
 Luego descomentamos comentamos
 %wheel ALL=(ALL) NOPASSWD: ALL  
